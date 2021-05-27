@@ -1,4 +1,4 @@
-console.log("2.3.2. Bibliothécaire");
+
 
 const books = [
   { title: 'Gatsby le magnifique', id: 133712, rented: 39 },

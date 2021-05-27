@@ -1,5 +1,4 @@
 
-// 2.4.1. Code la vie
 console.log("2.4.1. Code la vie");
 
 const code = [
