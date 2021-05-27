@@ -29,4 +29,31 @@ for(let index in entrepreneurs)
 result2.push({first: entrepreneurs[index].first,last: entrepreneurs[index].last});
 console.log(result2);
 
+console.log("Voila l'age des entrepreneurs aujourd'hui");
+for (let entrepreneur of entrepreneurs) {
+  age = 2021 - entrepreneur.year
+	console.log(entrepreneur.first + " " + entrepreneur.last + " : " + age);
+}
+console.log("");
+
+
+console.log("Entrepreuneurs trié par ordre alphabétique du nom de famille");
+
+function dynamicSort(property) {
+  return function (a,b) {
+    let result = 0
+    if (a[property] < b[property]) {
+      result = -1;
+    } else if(a[property] > b[property]) {
+      result = 1;
+    } else {
+      result = 0;
+    }
+    return result;
+  }
+}
+
+entrepreneurs.sort(dynamicSort("last"));
+console.log(entrepreneurs);
+
 
