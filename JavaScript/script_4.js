@@ -19,7 +19,7 @@ const entrepreneurs = [
   { first: 'Peter', last: 'Thiel', year: 1967 }
 ];
 
-console.log("Filtre dans cette liste les entrepreneurs qui sont nés dans les années 70")
+console.log("Les entrepreneurs nés dans les années 70 sont:")
 let result1 = entrepreneurs.filter(entrepreneur => entrepreneur['year']>=1970 && entrepreneur['year']<1980)
 console.log(result1)
 
@@ -37,7 +37,7 @@ for (let entrepreneur of entrepreneurs) {
 console.log("");
 
 
-console.log("Entrepreuneurs trié par ordre alphabétique du nom de famille");
+console.log("Entrepreuneurs trié par ordre alphabétique (last name)");
 
 function dynamicSort(property) {
   return function (a,b) {

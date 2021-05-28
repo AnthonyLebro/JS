@@ -17,7 +17,7 @@ const books = [
 
 console.log("");
 
-// Est-ce que tous les livres ont été au moins empruntés une fois ?
+
 let count = 0
 console.log("Livres empruntés au moins une fois");
 for (let book of books) {
@@ -80,13 +80,13 @@ console.log(`Le livre le moins emprunté est ${least_rented_book.title}, et a é
 console.log("");
 
 
-// Find le livre avec l'ID: 873495 ;
+// Find l'ID: 873495 ;
 console.log("Livre avec l'ID: 873495");
 console.log(`Le livre avec l'ID: 873495 est ${book_id.title}`);
 
 console.log("");
 
-// Delete le livre avec l'ID: 133712 ;
+// Delete  l'ID: 133712 ;
 console.log("Suppression du livre avec l'ID: 133712");
 console.log(`Le livre avec l'ID: 133712 est ${book_to_delete.title}`);
 console.log(`Ci-dessus l'array books apres suppression de ${book_to_delete.title}`);
